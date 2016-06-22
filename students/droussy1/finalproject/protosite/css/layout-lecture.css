@@ -120,12 +120,6 @@ main{
   padding: 10px;
   display: block;
 }
-/* side navigation menu for lecture pages */
-
-
-
-/* end side navigation for lecture pages */
-
 
 
 /* Dashboard home page buttons */
@@ -178,40 +172,41 @@ main{
 
 /* End dashboard home page buttons */
 
-/* lecture pages content blocks and classes */
-.lesson-heading{
-  width: 700px;
-  margin: 15px 0px 0px 0px;
-  padding: 0px 0px 0px 15px;
-  background-color: #9e0b0f;
-  border-radius: 10px 10px 0px 0px;
-  display: block;
+
+.contentblock{
+  width: 1100px;
+  margin: 5px auto 5px auto;
+  padding-bottom: 15px;
 }
 
-.lesson-block{
-  width: 700px;
-  margin: 0px 0px 15px 0px;
-  padding: 10px;
-  background-color: white;
-  border-radius: 0px 0px 10px 10px;
-  display: block;
+.content-1col{
+  width: 1100px;
 }
 
-.lesson-content{
+.content-2col{
   width: 500px;
   display: inline-block;
 }
 
-.exercise-heading{
-  
+.content-3col{
+  vertical-align: top;
+  width: 330px;
+  display: inline-block;
+  margin: 0px auto;
 }
 
-.resource-link {
-  
+.content-3col-middle{
+  vertical-align: top;
+  width: 330px;
+  display: inline-block;
+  margin: auto;
+  padding: 0px 50px 0px 50px;
 }
 
-/* end lecture pages content blocks and classes */
-
+.content-3col .icon{
+  width: 150px;
+  margin: 0px auto;
+}
 
 ul{
   padding-bottom: 10px;

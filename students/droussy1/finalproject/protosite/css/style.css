@@ -2,7 +2,7 @@ p {
   font-family: 'Montserrat', Arial, serif;
   font-weight: 400;
   font-size: 15px;
-  color: white;
+  color: #032983;
 }
 
 ul li{
@@ -36,7 +36,7 @@ h1, h2 {
 
 h1 {
   font-size: 30px;
-  padding: 20px 0px 20px 0px;
+  padding: 0;
 }
 
 h2 {
