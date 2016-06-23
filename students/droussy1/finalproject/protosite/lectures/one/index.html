@@ -15,7 +15,10 @@
 	<body>
     <div id="outercontainer" class="white-background">
       <header>
-        <h1>Intermediate web design and development</h1>
+        <div id="header-inner">
+          <img src="/students/droussy1/finalproject/protosite/img/website-design-logo.png" />
+          <div id="header-inner-title"><h1>Intermediate web design and development</h1></div>
+        </div> 
       </header>
       
       <nav>
@@ -33,16 +36,206 @@
       <main>
       
         <div id="side-nav">
-          <p>some text</p>
-        </div>
-      
-        <div class="lesson-block">
-          <div class="lesson-heading"><h1 >Lesson 1</h1></div>
-          <div class="lesson-content">
-            <p>lesson content</p>
+          <div id="side-nav-contents">
+            <div class="side-nav-headings"><h3>Contents</h3></div>
+            <div id="side-nav-toc"><p>ul of headings here</p></div>
+            <div class="side-nav-headings"><h3>Exercises</h3></div>
+            <div id="side-nav-exercises"><p>ul of headings here</p></div>
+            <div class="side-nav-headings"><h3>Resources</h3></div>
+            <div id="side-nav-resources"><p>ul of headings here</p></div>
           </div>
         </div>
-        
+        <div id="lecture-heading">
+          <h1>Lecture One: Course Introduction</h1>
+        </div>
+        <div id="lesson">
+          <div class="lesson-block">
+            <div class="lesson-heading"><h1>Introductions</h1></div>
+            <div class="lesson-content">
+              <ul>
+                <li>instructor: Jeff Parker</li>
+                <li>email: jeffrey_parker@bcit.ca</li>
+                <li>web site: this is it</li>
+                <li>all about you...
+                  <ul>
+                    <li>your name</li>
+                    <li>your background</li>
+                    <li>what do you hope to achieve in this course? Be specific!</li>
+                  </ul>  
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="lesson-block">
+            <div class="lesson-heading"><h1>Orientation: Course overview</h1></div>
+            <div class="lesson-content">
+              <p>Learn <a href="/comp1950/courseinfo/">about the course</a> to help you determine if this is the right class for you.</p>
+            </div>
+          </div>
+          
+          <div class="lesson-block">
+            <div class="lesson-heading"><h1>Orientation: Personal files</h1></div>
+            <div class="lesson-content">
+              <p>Each student is assigned BCIT network storage space, you may store your in-class work here. All work performed on lab computers should be saved to personal files.</p>
+              <p>When working on any BCIT lab computer, vist the H: drive. When away from a lab computer, you can access your personal files remotely, see the <a href="https://helpdesk.bcit.ca/sr/network/734.html">BCIT help desk instructions</a>.</p>
+              <p>If you do your in class work on a personal laptop, or save to a USB key, you do not need to use the personal files area.</p>
+            </div>
+          </div>
+          
+          <div class="lesson-block">
+            <div class="lesson-heading"><h1>Orientation: Web space</h1></div>
+            <div class="lesson-content">
+              <p>Each student will get personal webspace. This is not a continuation of your COMP1850 site (if you had one).  This site is primarily for you to house your exercises, assignments, group work and more.  Make it a site that is usable and functional.</p>
+              <ul>
+                <li>Your instructor will create webspaces for each of you.</li>
+                <li>Email your instructor this information:
+                  <ul>
+                    <li>your myBCIT email name - eg: youname123@my.bcit.ca</li>
+                    <li>your student number - eg: A00123456</li>
+                    <li>a case sensitive password you will remember - ???</li>
+                  </ul>
+                </li>
+                <li>Your URL will be: <strong>http://bcitcomp.ca/students/{your_mybcit_email_name}</strong></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="lesson-block">
+            <div class="lesson-heading"><h1>Connect to your bcitcomp.ca account via FTP</h1></div>
+            <div class="lesson-content">
+              <p>Use Filezilla, or any FTP client to connect to bcitcomp.ca. The bcitcomp.ca server provides you with a space on the internet where you can publish your homework and assignments.</p>
+              <ol>	
+                <li>choose: File-&gt;SiteManager-&gt;New Site, then describe the FTP server, eg "bcitcomp.ca"</li>
+                <li>Host:   bcitcomp.ca </li>
+                <li>Port:   21</li>
+                <li>User:   {yourStudentNumberUsingAnUppercaseA}@bcitcomp.ca </li>
+                <li>Password:  {determined by you via email to your instructor} </li>
+                <li>Servertype:  FTP File Transfer Protocol </li>
+                <li>LogonType:  Normal </li>
+                <li>click: Connect</li>
+              </ol>
+              <img src="/1950/images/filezilla_signalflare.jpg" alt="filezilla FTP login screenshot" height="438px" width="512px">
+              <p>If you experience connectivity problems, re-check your input, or ask your instructor for assistance.</p>
+            </div>
+          </div>
+          
+          <div class="lecture-sub-heading">
+            <h1>Lecture One: Tools & Standards</h1>
+          </div>
+          
+          <div class="lesson-block">
+            <div class="lesson-heading"><h1>Tools: Web Development</h1></div>
+            <div class="lesson-content">
+              <p>There are a LOT of tools to choose from these days. Desktop and mobile apps, online tools and services, etc. </p>
+              <p>
+                <strong>What kind of tools do you use?</strong>
+              </p>
+              <p>
+                Workflow is defined as the process you take getting from start to completion on a task or series of tasks. For web development, it generally results in a page that has been created or updated by the use some kind of tool.
+              </p>
+              <p>There is no perfect platform or workflow, there is only <strong>your</strong> platform and workflow that matters.  Once you can get the job done, you are off to the races, so find a workflow that suits you the best.</p>
+
+              <p>Some of the tools used by web developers...</p>
+              <h3>Text Editors</h3>	
+              <ul>
+                <li><a href="http://notepad-plus-plus.org/">Notepad++</a> - Text Editor (Win) * installed in BCIT lab computers *</li>
+                <li><a href="http://www.sublimetext.com/2">Sublime Text 2</a> - Text Editor (Mac/Win)</li>
+                <li><a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> - Text Editor (Mac)</li>
+              </ul>
+              <h3>FTP (File Transfer Protocol) Clients</h3>	
+              <ul>				
+                <li><a href="http://filezilla-project.org">Filezilla</a> - FTP tool (Win) * installed in BCIT lab computers *</li>
+                <li><a href="http://cyberduck.ch/">Cyberduck FTP</a> - FTP tool (Mac)</li>
+              <li><a href="http://www.wsftple.com/">WS FTP</a> - FTP tool (Win)</li>		
+              </ul>
+              <h3>IDEs (Integrated Development Environments)</h3>
+              <ul>		
+                <li><a href="http://www.panic.com/coda/">Coda</a> - Web Dev IDE (Mac)</li>
+                <li><a href="http://www.adobe.com/products/dreamweaver.html">Dreamweaver</a> - Web Dev IDE (Mac/Win)</li>
+                <li><a href="http://www.aptana.com/">Aptana</a> - Web Dev IDE (Win/Mac)</li>
+                <li><a href="http://www.htmlkit.com/">HTMLKit</a> - Web Dev IDE (Win)</li>
+                <li><a href="http://www.textasticapp.com/">Textastic</a> - Web Dev IDE (iPad)</li>
+                <li><a href="http://www.activestate.com/komodo-edit">Komodo</a> - Web Dev IDE (Mac/Win)</li>
+              </ul>
+              <h3>Team Development</h3>
+              <ul>		
+                <li><a href="http://dropbox.com">Dropbox</a> - File Sharing (Web)</li>
+                <li><a href="https://github.com/">GitHub</a> - Collaborative Development (Web/Client)</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="lesson-block">
+            <div class="lesson-heading"><h1>Orientation: Personal files</h1></div>
+            <div class="lesson-content">
+              <p>Today, most modern browsers have some kind of development environment that can be turned on or triggered via extensions and/or plug-ins.</p>
+              <p>There are presently two major development platforms, with a few variations for examining and developing web pages.</p>
+              <ul>
+                <li><a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a>
+                  <ul>
+                    <li>Mozilla Foundation's web platform created by web developers</li>
+                    <li>Gecko rendering engine: fast and progressive</li>
+                    <li>Excellent level of standards compliance</li>
+                    <li>Corporate independence</li>
+                    <li>No built-in development tools</li>
+                    <li>Plethora of add-ons that make web development easy</li>
+                    <li>Add-ons have a downside: bloat</li>
+                  </ul>
+                 </li>
+              </ul>
+              <ul>
+                <li><a href="http://www.webkit.org/">WebKit</a>
+                  <ul>
+                    <li>This is the platform that gives us <a href="http://www.google.com/chrome">Chrome</a>, <a href="http://www.apple.com/safari/">Safari</a> and <a href="http://www.opera.com/">Opera</a>, with a few other smaller browsers out there as well.</li>
+                    <li>Excellent platform that is very fast and standards compliant</li>
+                    <li>Third parties can download the source, make local adjustments and release their own version, as Google and Apple have both done</li>
+                    <li>Standalone version can be downloaded at any time for the latest release</li>
+                    <li>Development is done via the built-in Developer Tools</li>
+                    <li>Initially a thin environment, recent releases have made Webkit-based browsers excellent for developers</li>
+                    <li>Macintosh based developers may need to <a href="http://www.jonhartmann.com/index.cfm/2011/4/28/Enabling-Safari-Developer-Tools">enable web developer options</a> in Safari before accessing the devloper tools</li>
+                  </ul>
+                </li>
+              </ul>
+              <p><strong>Remember to test in as many browsers as you can! Useful tools for this are <a href="http://browsershots.org/">BrowserShots</a> (Chrome, Firefox, Safari, Opera) and <a href="http://netrenderer.com/">Netrenderer</a> (For IE)</strong></p>
+            </div>
+          </div>
+          
+          <div class="lesson-block">
+            <div class="lesson-heading"><h1>Tools: Firefox Extensions</h1></div>
+            <div class="lesson-content">
+              <p>Extensions are a big part of Firefox, especially considering the background the browser has in web development.</p>
+              <p>In fact, web development even has it's own category dedicated to <a href="https://addons.mozilla.org/en-US/firefox/browse/type:1/cat:4">Web and Developer Tools</a></p>
+              <p>One of the best tools for Web Developers is the <a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/?src=search">
+              Web Developer toolbar
+              </a></p>
+              <p>The author, Chris Pedrick, maintains a <a href="http://chrispederick.com/work/webdeveloper/">
+              site for the Web Developer extension</a>. He has even created a version for seeral other browsers, though it isn't quite as full-featured.</p>
+              <p>Some of the amazing tools this has to offer web developers:</p>
+              <ul>
+                <li>Disable styles - by embedded/linked/inline as well as all styles, or just a single sheet</li>
+                <li>Edit CSS &amp; HTML - Make live changes to your CSS or HTML!</li>
+                <li>Images - outlining, file sizes, alt information... lots more</li>
+                <li>Form detail - useful for working with form elements</li>
+                <li>Cookie examination and manipulation</li>
+                <li>Built in validators</li>
+                <li>Line Guides &amp; Rulers</li>
+                <li>Element inspector</li>
+              </ul>
+              <p></p>
+              <p>
+                <strong>Let's take a quick look at the Web Developer Toolbar</strong>
+              </p>
+              <ul>
+                <li>Install it if you have not already done so</li>
+                <li>Validate the HTML of this page with the Tools tab (Tools &gt; Validate HTML)</li>
+                <li>Validate the CSS of this page with the Tools tab (Tools &gt; Validate CSS)</li>	
+                <li>View the CSS of the page (CSS &gt; View)</li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
       </main>
     </div>  
     <footer>

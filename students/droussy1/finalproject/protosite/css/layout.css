@@ -13,47 +13,59 @@ body{
 
 #outercontainer{
   width: 100%;
-  background-size: cover;
 }
 
 .blue-background{
   background-image: url(/students/droussy1/finalproject/protosite/img/blue-background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .white-background{
   background-image: url(/students/droussy1/finalproject/protosite/img/white-background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 header{
   width: 100%;
-  min-height: 100px;
-  background-color: #032983;
+  min-height: 110px;
+  background-color: #032944;
 }
 
 #header-inner{
-  width: 1000px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  width: 1050px;
   margin: 0px auto;
 }
 
 #header-inner img{
-  display: block;
-  margin: 0px auto 0px auto;
+  padding-top: 10px;
+  display: inline;
+}
+
+#header-inner h1{
+  font: 'Montserrat', Arial, serif;
+  color: #fff;
+  font-size: 36px;
+  padding: 20px 0px;
+  margin: 0px;
+  display: inline;
 }
 
 /*begin navigation section*/
 
 nav{
   width: 100%;
+  height: 50px;
   background-color: #032983;
   margin: 0px auto;
   padding: 10px;
 }
 
 .nav-inner{
-  margin: 0px auto;
-  width: 1000px;
+  margin: 5px auto;
+  width: 1050px;
+  background-color: #032983;
 }
 
 .nav-inner ul, .nav-inner li {
@@ -115,13 +127,70 @@ li:hover ul.submenu {
 /*end navigation section*/
 
 main{
-  width: 1100px;
+  width: 1050px;
   margin: 0px auto 0px auto;
   padding: 10px;
   display: block;
 }
 /* side navigation menu for lecture pages */
 
+#side-nav{
+  float:right;
+  margin-top: 92px;
+  width: 250px;
+}
+
+#side-nav-contents{
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.side-nav-headings{
+  width: 100%;
+  margin-top: 15px;
+  /*padding: 5px 5px 5px 15px;*/
+  background-color: #9e0b0f;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: block;
+}
+
+.side-nav-headings h3{
+  background-color: #9e0b0f;
+  margin-left: 10px;
+  padding: 5px 0px;
+  font-family: 'Montserrat', Arial, serif;
+  font-size: 14px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#side-nav-toc{
+  width: 220px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  background-color: white;
+  display: block;
+}
+
+#side-nav-exercises{
+  width: 220px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  background-color: white;
+  display: block;
+}
+
+#side-nav-resources{
+  width: 220px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  background-color: white;
+  display: block;
+}
 
 
 /* end side navigation for lecture pages */
@@ -132,8 +201,7 @@ main{
 
 #dashboard-buttons{
   width: 950px;
-  margin: 150px auto 200px auto;
-  padding: 25px;
+  margin: 20px auto 20px auto;
 }
 
 #dashboard-buttons h1{
@@ -141,6 +209,7 @@ main{
   color: #032983;
   font-size: 46px;
   text-align: center;
+  padding: 0px;
 }
 
 .button-row{
@@ -151,7 +220,7 @@ main{
 
 .button{
   width: 200px;
-  height: 100px;
+  height: 200px;
   padding: 0px;
   margin: 0px 48px;
   border-radius: 10px;
@@ -169,37 +238,85 @@ main{
 }
 
 .button-icon{
-  
+  margin-top: 15px;
+}
+
+.button-icon img{
+  margin: 0px auto;
 }
 
 .button-label{
-  
+  display: block;
+}
+
+.button-label h3{
+  font-family: 'Montserrat', Arial, serif;
+  font-size: 18px;
+  color: white;
 }
 
 /* End dashboard home page buttons */
 
 /* lecture pages content blocks and classes */
+
+#lecture-heading{
+  width: 1050px;
+  background-color: #9e0b0f;
+  border-radius: 10px;
+}
+
+#lecture-heading h1{
+  padding: 10px;
+  font-family: 'Montserrat', Arial, serif;
+  color: white;
+}
+
+.lecture-sub-heading{
+  width: 775px;
+  background-color: #9e0b0f;
+  border-radius: 10px;
+}
+
+.lecture-sub-heading h1{
+  padding: 10px;
+  font-family: 'Montserrat', Arial, serif;
+  color: white;
+}
+
+#lesson{
+  width: 775px;
+  margin-top: 25px;
+}
+
+.lesson-block{
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
 .lesson-heading{
-  width: 700px;
-  margin: 15px 0px 0px 0px;
-  padding: 0px 0px 0px 15px;
+  width: 100%;
+  margin-top: 15px;
+  /*padding: 5px 5px 5px 15px;*/
   background-color: #9e0b0f;
   border-radius: 10px 10px 0px 0px;
   display: block;
 }
 
-.lesson-block{
-  width: 700px;
-  margin: 0px 0px 15px 0px;
-  padding: 10px;
-  background-color: white;
-  border-radius: 0px 0px 10px 10px;
-  display: block;
+.lesson-heading h1{
+  font-family: 'Montserrat', Arial, serif;
+  color: white;
+  margin-left: 15px;
+  padding: 5px 0px;
 }
 
 .lesson-content{
-  width: 500px;
-  display: inline-block;
+  width: 730px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  background-color: white;
+  display: block;
 }
 
 .exercise-heading{
