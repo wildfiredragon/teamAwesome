@@ -1,30 +1,34 @@
-html body{
-  padding: 0px;
-  margin: 0px;
+* {
+	margin: 0px;
+}
+
+html, body{
+  height: 100%;
 }
 
 html{
-  background-color: #282828;
-}
-
-body{
-  height: 100%;
+  background-color: #032944;
 }
 
 #outercontainer{
   width: 100%;
+  height: auto !important;
+  margin: 0px auto -60px; /* the bottom margin is the negative value of the footer's height */
+  min-height: 100%;
 }
 
 .blue-background{
   background-image: url(/students/droussy1/finalproject/protosite/img/blue-background.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .white-background{
   background-image: url(/students/droussy1/finalproject/protosite/img/white-background.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 header{
@@ -38,18 +42,25 @@ header{
   margin: 0px auto;
 }
 
-#header-inner img{
+#logo{
+  float: left;
   padding-top: 10px;
   display: inline;
 }
 
-#header-inner h1{
-  font: 'Montserrat', Arial, serif;
-  color: #fff;
-  font-size: 36px;
+
+#header-inner-title{
+  float: right;
+  width: 900px;
   padding: 20px 0px;
   margin: 0px;
   display: inline;
+}
+
+#header-inner-title h1{
+  font: 'Montserrat', Arial, serif;
+  color: #fff;
+  font-size: 36px;
 }
 
 /*begin navigation section*/
@@ -257,6 +268,123 @@ main{
 
 /* End dashboard home page buttons */
 
+/* Lecture home page buttons */
+
+#lecture-buttons{
+  width: 1000px;
+  margin: 20px auto 20px auto;
+}
+
+#lecture-buttons h1{
+  font: 'Montserrat', Arial, serif;
+  color: #032983;
+  font-size: 46px;
+  text-align: center;
+  padding: 0px;
+}
+
+.lecture-button-row{
+  width: 950px;
+  margin: 0px auto;
+  padding: 0px 0px 30px 0px;
+}
+
+.lecture-button{
+  width: 200px;
+  height: 75px;
+  padding: 0px;
+  margin: 0px 15px;
+  border-radius: 10px;
+  display:inline-block;
+  font-size:12px;
+  font-family: 'Montserrat', Arial, serif;
+  text-align: center;
+  font-weight:bold;
+  color: #FFFFFF;
+  background-color: #032983; 
+}
+
+.lecture-button:hover{
+ background-color: #0959a5;
+}
+
+.lecture-button-label{
+  margin-top: 15px;
+  display: block;
+}
+
+.lecture-button-label h3{
+  font-family: 'Montserrat', Arial, serif;
+  font-size: 18px;
+  color: white;
+}
+
+.lecture-button-label p{
+  font-family: 'Montserrat', Arial, serif;
+  color: white;
+}
+
+/* End lecture home page buttons */
+
+
+/* Quiz home page buttons */
+
+#quiz-buttons{
+  width: 1000px;
+  margin: 20px auto 20px auto;
+}
+
+#quiz-buttons h1{
+  font: 'Montserrat', Arial, serif;
+  color: #032983;
+  font-size: 46px;
+  text-align: center;
+  padding: 0px;
+}
+
+.quiz-button-row{
+  width: 950px;
+  margin: 0px auto;
+  padding: 0px 0px 30px 0px;
+}
+
+.quiz-button{
+  width: 200px;
+  height: 75px;
+  padding: 0px;
+  margin: 0px 15px;
+  border-radius: 10px;
+  display:inline-block;
+  font-size:12px;
+  font-family: 'Montserrat', Arial, serif;
+  text-align: center;
+  font-weight:bold;
+  color: #FFFFFF;
+  background-color: #032983; 
+}
+
+.quiz-button:hover{
+ background-color: #0959a5;
+}
+
+.quiz-button-label{
+  margin-top: 15px;
+  display: block;
+}
+
+.quiz-button-label h3{
+  font-family: 'Montserrat', Arial, serif;
+  font-size: 18px;
+  color: white;
+}
+
+.quiz-button-label p{
+  font-family: 'Montserrat', Arial, serif;
+  color: white;
+}
+
+/* End quiz home page buttons */
+
 /* lecture pages content blocks and classes */
 
 #lecture-heading{
@@ -345,19 +473,32 @@ li{
 .border{
   padding:2px;
   border:3px solid #DF4B05;
-  background-color:#282828;
+  background-color:#032944;
   margin: 10px;
 }
 
-#footer {
+/* begin footer layout */
+
+footer {
+  background-color: #032944;
   width: 100%;
-  min-height: 25px;
-  background-color: #282828;
+  margin: 0px auto;
 }
 
-#footer-inner{
+footer .footer-inner{
   margin: 0px auto;
-  width: 1100px;
-  padding-top: 10px;
-  padding-bottom: 5px;
+}
+
+.footer-inner {
+  padding: 15px;
+}
+
+.footer-inner p{
+  font-family: 'Montserrat', Arial, serif;
+  color: white;
+}
+
+footer, .push {
+  clear: both;
+	height: 60px; /* '.push' must be the same height as 'footer' */
 }

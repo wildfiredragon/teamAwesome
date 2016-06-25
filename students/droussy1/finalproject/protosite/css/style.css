@@ -4,6 +4,11 @@ p {
   font-size: 15px;
   color: #032983;
 }
+
+.center-align {
+  text-align: center;
+}
+
 /*
 ul li{
   font-family: 'Montserrat', Arial, serif;
