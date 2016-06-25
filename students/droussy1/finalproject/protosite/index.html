@@ -14,86 +14,89 @@
 
 	<body>
     <div id="outercontainer" class="blue-background">
-      <header>
-        <div id="header-inner">
-          <img src="/students/droussy1/finalproject/protosite/img/website-design-logo.png" />
-          <div id="header-inner-title"><h1>Intermediate web design and development</h1></div>
-        </div> 
-      </header>
+    
+      <!--#include virtual="/students/droussy1/finalproject/protosite/ssis/header.inc" -->
       
-      <nav>
-        <div class="nav-inner">
-          <ul>
-            <li><a href="/students/droussy1/finalproject/index.html">Home</a></li>
-            <li><a href="/students/droussy1/finalproject/about/index.html">About</a></li>
-            <li><a href="/students/droussy1/finalproject/about/index.html">Menu Item #1</a></li>
-            <li><a href="/students/droussy1/finalproject/about/index.html">Menu Item #2</a></li>
-            <li><a href="/students/droussy1/finalproject/about/index.html">Menu Item #3</a></li>
-          </ul>
-        </div>
-      </nav>       
+      <!--#include virtual="/students/droussy1/finalproject/protosite/ssis/nav.inc" -->
+      
       <main>
         <div id="dashboard-buttons">
           <h1>COMP 1950 | BCIT Computing</h1>
           <!-- button row 1 -->
           <div class="button-row">
-            <div class="button">
-              <div class="button-icon">
-                <img src="/students/droussy1/finalproject/protosite/img/lecturer-with-screen.png" />
+              
+            <a href="/students/droussy1/finalproject/protosite/lectures"> 
+              <div class="button">
+                <div class="button-icon">
+                  <img src="/students/droussy1/finalproject/protosite/img/lecturer-with-screen.png" />
+                </div>
+                <div class="button-label">
+                  <h3>LECTURES</h3>
+                </div>
               </div>
-              <div class="button-label">
-                <h3>LECTURES</h3>
-              </div>
-            </div>
+            </a> 
             
-            <div class="button">
-              <div class="button-icon">
-                <img src="/students/droussy1/finalproject/protosite/img/lecture-exercises.png" />
+            <a href="/students/droussy1/finalproject/protosite/exercises">
+              <div class="button">
+                <div class="button-icon">
+                  <img src="/students/droussy1/finalproject/protosite/img/lecture-exercises.png" />
+                </div>
+                <div class="button-label">
+                  <h3>EXERCISES</h3>
+                </div>
               </div>
-              <div class="button-label">
-                <h3>EXERCISES</h3>
-              </div>
-            </div>
+            </a>
             
-            <div class="button">
-              <div class="button-icon">
-                <img src="/students/droussy1/finalproject/protosite/img/lecture-resources.png" />
+            <a href="/students/droussy1/finalproject/protosite/resources">
+              <div class="button">
+                <div class="button-icon">
+                  <img src="/students/droussy1/finalproject/protosite/img/lecture-resources.png" />
+                </div>
+                <div class="button-label">
+                  <h3>RESOURCES</h3>
+                </div>
               </div>
-              <div class="button-label">
-                <h3>RESOURCES</h3>
-              </div>
-            </div>
+            </a>
+            
           </div>
           <!-- button row 1 ends -->
           
           <!-- button row 2 -->
+         
           <div class="button-row">
-            <div class="button">
-              <div class="button-icon">
-                <img src="/students/droussy1/finalproject/protosite/img/test-quiz.png" />
+          
+            <a href="/students/droussy1/finalproject/protosite/quizzes">
+              <div class="button">
+                <div class="button-icon">
+                  <img src="/students/droussy1/finalproject/protosite/img/test-quiz.png" />
+                </div>
+                <div class="button-label">
+                  <h3>QUIZZES</h3>
+                </div>
               </div>
-              <div class="button-label">
-                <h3>QUIZZES</h3>
-              </div>
-            </div>
+            </a>
             
-            <div class="button">
-              <div class="button-icon">
-                <img src="/students/droussy1/finalproject/protosite/img/info.png" />
+            <a href="/students/droussy1/finalproject/protosite/about">
+              <div class="button">
+                <div class="button-icon">
+                  <img src="/students/droussy1/finalproject/protosite/img/info.png" />
+                </div>
+                <div class="button-label">
+                  <h3>ABOUT</h3>
+                </div>
               </div>
-              <div class="button-label">
-                <h3>ABOUT</h3>
-              </div>
-            </div>
+            </a>
             
-            <div class="button">
-              <div class="button-icon">
-                <img src="/students/droussy1/finalproject/protosite/img/dice.png" />
+            <a href="/students/droussy1/finalproject/protosite/other">
+              <div class="button">
+                <div class="button-icon">
+                  <img src="/students/droussy1/finalproject/protosite/img/dice.png" />
+                </div>
+                <div class="button-label">
+                  <h3>OTHER</h3>
+                </div>
               </div>
-              <div class="button-label">
-                <h3>OTHER</h3>
-              </div>
-            </div>
+            </a>
           </div>
           <!-- button row 2 ends -->
           
@@ -101,9 +104,8 @@
         
       </main>
     </div>  
-    <footer>
-      <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    </footer>
+
+    <!--#include virtual="/students/droussy1/finalproject/protosite/ssis/footer.inc" -->
     
 	</body>
 </html>
