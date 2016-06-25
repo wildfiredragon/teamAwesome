@@ -79,6 +79,14 @@ nav{
   background-color: #032983;
 }
 
+.menu-bar{
+  float: left;
+}
+
+.search-bar{
+  float: right;
+}
+
 .nav-inner ul, .nav-inner li {
 	margin: 0;
 	padding: 0;
