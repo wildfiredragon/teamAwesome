@@ -458,6 +458,57 @@ main{
 /* end lecture pages content blocks and classes */
 
 
+/* Quiz pages content blocks and classes */
+
+#quiz-heading{
+  width: 1050px;
+  background-color: #9e0b0f;
+  border-radius: 10px;
+}
+
+#quiz-heading h1{
+  padding: 10px;
+  font-family: 'Montserrat', Arial, serif;
+  color: white;
+}
+
+#quiz{
+  width: 1050px;
+  margin-top: 25px;
+}
+
+.question-block{
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.question-heading{
+  width: 100%;
+  margin-top: 15px;
+  background-color: #9e0b0f;
+  border-radius: 10px 10px 0px 0px;
+  display: block;
+}
+
+.question-heading h1{
+  font-family: 'Montserrat', Arial, serif;
+  color: white;
+  margin-left: 15px;
+  padding: 5px 0px;
+}
+
+.question-content{
+  width: 1000px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  background-color: white;
+  display: block;
+}
+
+/* end quiz pages content blocks and classes */
+
 ul{
   padding-bottom: 10px;
 }
