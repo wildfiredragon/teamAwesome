@@ -155,7 +155,7 @@ main{
 
 #side-nav{
   float:right;
-  margin-top: 92px;
+  margin-top: 108px;
   width: 250px;
 }
 
@@ -166,21 +166,18 @@ main{
   padding-bottom: 10px;
 }
 
-#nav {
-  display: block;
-  width: 280px;
-  margin: 0 auto;
+#nav{
+	padding-left: 0px;
+	width: 100%;
 }
 
 #nav > li{
   width: 100%;
   margin-top: 15px;
-  /*padding: 5px 5px 5px 15px;*/
   background-color: #9e0b0f;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   display: block;
-  margin-left: 10px;
   padding: 5px 0px;
   font-family: 'Montserrat', Arial, serif;
   font-size: 14px;
@@ -192,11 +189,8 @@ main{
   padding: 16px 18px;
   font-size: 1.3em;
   font-weight: bold;
-  color: #d4d4d4;
+  color: white;
   text-decoration: none;
-  border-bottom: 1px solid #212121;
-  background-color: #343434;
-
 }
 
 #nav > li > a:hover, #nav > li > a.open {
@@ -207,7 +201,11 @@ main{
 }
 
 /* hide sub-menu links until clicked*/
-#nav li ul { display: none; background: #4a5b78; }
+#nav li ul {
+	display: none; 
+	background-color: white;
+	padding-left: 10px;
+}
 
 
 #nav li >ul >li{
@@ -222,12 +220,11 @@ main{
   display: block;
   background: none;
   padding: 10px 0px;
-  padding-left: 30px;
+  padding-left: 10px;
   font-size: 1.1em;
   text-decoration: none;
   font-weight: bold;
-  color: #e3e7f1;
-  text-shadow: 1px 1px 0px #000;
+  color: black;
 }
 #nav li ul li a:hover {
   background: #394963;
