@@ -3,18 +3,24 @@
 	<head>
 		<title>COMP 1950: Lecture 1</title>
 		<meta charset="utf-8" />
-    
-    
-        
+ 
     <link href="/students/droussy1/finalproject/protosite/css/main.css" rel="stylesheet" />
     <link href="/students/droussy1/finalproject/protosite/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/students/droussy1/finalproject/protosite/css/font-awesome.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+  
+	<!-- jQuery -->
+	<script src="/students/droussy1/finalproject/js/jquery-1.10.2.min.js"></script>
+	<!-- accordion nav js -->
+	<script src="/students/droussy1/finalproject/protosite/js/nav.js"></script>
+	
 	</head>
 
 	<body>
     <div id="outercontainer" class="white-background">
-      <header>
+ 
+ 
+	<header>
         <div id="header-inner">
           <img src="/students/droussy1/finalproject/protosite/img/website-design-logo.png" />
           <div id="header-inner-title"><h1>Intermediate web design and development</h1></div>
@@ -23,7 +29,7 @@
       
       <nav>
         <div class="nav-inner">
-          <ul>
+          <ul class="">
             <li><a href="/students/droussy1/finalproject/index.html">Home</a></li>
             <li><a href="/students/droussy1/finalproject/about/index.html">About</a></li>
             <li><a href="/students/droussy1/finalproject/about/index.html">Menu Item #1</a></li>
@@ -34,17 +40,38 @@
       </nav>  
       
       <main>
-      
-        <div id="side-nav">
-          <div id="side-nav-contents">
-            <div class="side-nav-headings"><h3>Contents</h3></div>
-            <div id="side-nav-toc"><p>ul of headings here</p></div>
-            <div class="side-nav-headings"><h3>Exercises</h3></div>
-            <div id="side-nav-exercises"><p>ul of headings here</p></div>
-            <div class="side-nav-headings"><h3>Resources</h3></div>
-            <div id="side-nav-resources"><p>ul of headings here</p></div>
-          </div>
-        </div>
+		<div id="side-nav">
+			<div id="side-nav-contents">
+				<ul id="nav">
+					<li class="side-nav-headings"><a href="#">Agenda</a></li>
+					<li class="side-nav-headings"><a href="#">Contents</a>
+						<ul>
+							<li><a href="#">heading 1</a></li>
+							<li><a href="#">heading 2</a></li>
+							<li><a href="#">heading 3</a></li>
+							<li><a href="#">heading 4</a></li>
+						 </ul>
+					</li>
+					<li class="side-nav-headings"><a href="#">Exercises</a>
+						<ul>
+							<li><a href="#">Exercise 1</a></li>
+							<li><a href="#">Exercise 2</a></li>
+							<li><a href="#">Exercise 3</a></li>
+							<li><a href="#">Exercise 4</a></li>
+						</ul>
+					</li>
+					<li class="side-nav-headings"><a href="#">Resources</a>
+						<ul>
+							<li><a href="#">Link 1</a></li>
+							<li><a href="#">Link 2</a></li>
+							<li><a href="#">Link 3</a></li>
+							<li><a href="#">Link 4</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
         <div id="lecture-heading">
           <h1>Lecture One: Course Introduction</h1>
         </div>
