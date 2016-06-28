@@ -1,0 +1,29 @@
+#quiz input[type=text] {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    box-sizing: border-box;
+}
+
+#quiz input[type=radio] {
+    padding: 0px;
+    margin: 8px 20px;
+}
+
+#quiz input[type=submit] {
+    font-family: 'Montserrat', Arial, serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 20px;
+    color: #fff;
+    padding:5px 15px; 
+    background:#032944; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+#quiz input[type=submit]:hover {
+  background-color: #0959a5;
+}

@@ -9,21 +9,37 @@ p {
   text-align: center;
 }
 
-/*
+
 ul li{
   font-family: 'Montserrat', Arial, serif;
   font-weight: 400;
   font-size: 15px;
-  color: white;
+  color: #032983;
+}
+
+ol li{
+  font-family: 'Montserrat', Arial, serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #032983;
 }
 
 a {
   font-family: 'Montserrat', Arial, serif;
   font-weight: 400;
   font-size: 15px;
-  color: white;
+  color: #032983;
 }
 
+a:hover{
+  color: #0959a5;
+}
+
+a:visited{
+  color: #53b7dd;
+}
+
+/*
 blockquote{
   font-family: 'Montserrat', Arial, serif;
   font-weight: 700;

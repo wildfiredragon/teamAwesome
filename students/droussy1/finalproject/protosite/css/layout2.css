@@ -33,7 +33,7 @@ html{
 
 header{
   width: 100%;
-  height: 110px;
+  min-height: 110px;
   background-color: #032944;
 }
 
@@ -47,7 +47,6 @@ header{
   padding-top: 10px;
   display: inline;
 }
-
 
 #header-inner-title{
   float: right;
@@ -77,14 +76,6 @@ nav{
   margin: 5px auto;
   width: 1050px;
   background-color: #032983;
-}
-
-.menu-bar{
-  float: left;
-}
-
-.search-bar{
-  float: right;
 }
 
 .nav-inner ul, .nav-inner li {
@@ -166,19 +157,22 @@ main{
   padding-bottom: 10px;
 }
 
-#nav{
-	padding-left: 0px;
-	width: 100%;
+#nav {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
 }
 
 #nav > li{
   width: 100%;
   margin-top: 15px;
+  /*padding: 5px 5px 5px 15px;*/
   background-color: #9e0b0f;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   display: block;
-  padding: 0px;
+  margin-left: 10px;
+  padding: 5px 0px;
   font-family: 'Montserrat', Arial, serif;
   font-size: 14px;
   color: white;
@@ -186,31 +180,31 @@ main{
 
 #nav > li > a {
   display: block;
-  padding: 5px 18px;
-  font-size: 16px;
+  padding: 16px 18px;
+  font-size: 1.3em;
   font-weight: bold;
-  color: white;
+  color: #d4d4d4;
   text-decoration: none;
+  border-bottom: 1px solid #212121;
+  background-color: #343434;
+
 }
 
 #nav > li > a:hover, #nav > li > a.open {
-  color: #fff;
+  color: #e9e9e9;
   border-bottom-color: #384f76;
+  background-color: #6985b5;
  
 }
 
 /* hide sub-menu links until clicked*/
-#nav li ul {
-	display: none; 
-	background-color: white;
-	padding-left: 10px;
-}
+#nav li ul { display: none; background: #4a5b78; }
 
 
 #nav li >ul >li{
   width: 220px;
   margin-left: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   background-color: white;
   display: block;
 }
@@ -218,19 +212,16 @@ main{
 #nav li ul li a {
   display: block;
   background: none;
-  padding-top: 5px;
-  padding-left: 10px;
-  font-size: 14px;
+  padding: 10px 0px;
+  padding-left: 30px;
+  font-size: 1.1em;
   text-decoration: none;
   font-weight: bold;
-  color: #032944;
+  color: #e3e7f1;
+  text-shadow: 1px 1px 0px #000;
 }
 #nav li ul li a:hover {
-  color: #0959a5;
-}
-
-#nav li ul li a:visited {
-  color: #53b7dd;
+  background: #394963;
 }
 
 /* end side navigation for lecture pages */
@@ -296,8 +287,7 @@ main{
   color: white;
 }
 
-/* End dashboard home page buttons */
-
+/* End dashboard home page buttons */
 
 /* Lecture home page buttons */
 
@@ -487,57 +477,6 @@ main{
 }
 
 /* end lecture pages content blocks and classes */
-
-/* Quiz pages content blocks and classes */
-
-#quiz-heading{
-  width: 1050px;
-  background-color: #9e0b0f;
-  border-radius: 10px;
-}
-
-#quiz-heading h1{
-  padding: 10px;
-  font-family: 'Montserrat', Arial, serif;
-  color: white;
-}
-
-#quiz{
-  width: 1050px;
-  margin-top: 25px;
-}
-
-.question-block{
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
-  padding-bottom: 10px;
-}
-
-.question-heading{
-  width: 100%;
-  margin-top: 15px;
-  background-color: #9e0b0f;
-  border-radius: 10px 10px 0px 0px;
-  display: block;
-}
-
-.question-heading h1{
-  font-family: 'Montserrat', Arial, serif;
-  color: white;
-  margin-left: 15px;
-  padding: 5px 0px;
-}
-
-.question-content{
-  width: 1000px;
-  margin-left: 20px;
-  margin-bottom: 15px;
-  background-color: white;
-  display: block;
-}
-
-/* end quiz pages content blocks and classes */
 
 
 ul{

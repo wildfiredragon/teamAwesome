@@ -27,7 +27,7 @@ $(document).ready(function(){
 		var $sidebar   = $("#side-nav"), 
 			$window    = $(window),
 			offset     = $sidebar.offset(),
-			topPadding = 100;
+			topPadding = 230;
 			
 		$window.scroll(function() {
 			if ($window.scrollTop() > offset.top) {
@@ -36,7 +36,7 @@ $(document).ready(function(){
 				});
 			} else {
 				$sidebar.stop().animate({
-					marginTop: 108
+					marginTop: 92
 				});
 			}
 		});

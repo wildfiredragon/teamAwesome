@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>COMP 1950: Lecture 1</title>
+		<title>COMP 1950: Quiz #1</title>
 		<meta charset="utf-8" />
     
-    
-        
     <link href="/students/droussy1/finalproject/protosite/css/main.css" rel="stylesheet" />
     <link href="/students/droussy1/finalproject/protosite/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/students/droussy1/finalproject/protosite/css/font-awesome.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+    
+        <!-- jQuery -->
+	<script src="/students/droussy1/finalproject/js/jquery-1.10.2.min.js"></script>
+    <!-- sticky nav bar js -->
+  <script type="text/javascript" src="/students/droussy1/finalproject/protosite/js/sticky_nav.js"></script>
 	</head>
 
 	<body>
@@ -24,77 +27,84 @@
         </div>
         <div id="quiz">
           
-			<p>This quiz is to be done individually and is closed book.</p>
-			
-			<div class="question-block">
-				<div class="question-heading"><h1>Question #1</h1></div>
-				<div class="question-content">
-					<p>Name at least two things that you should do to a web page to display it for printing. (2 marks)</p>
-				</div>
-				<form>                                                                
-					<input type="text" id="answer" placeholder="Answer...">
-				</form>
-			</div>
+          <p>This quiz is to be done individually and is closed book.</p>
+          
+          <div class="question-block">
+            <div class="question-heading"><h1>Question #1</h1></div>
+            <div class="question-content">
+              <p>Name at least two things that you should do to a web page to display it for printing. (2 marks)</p>
+            </div>
+            <form>                                                                
+              <input type="text" id="answer" placeholder="Answer...">
+            </form>
+          </div>
 
-			<div class="question-block">			
-				<div class="question-heading"><h1>Question #2</h1></div>
-				<div class="question-content">
-					<p>Media queries can be applied either in the link tag or defined in an external CSS file. (1 marks)</p>
-				</div>
-				<form>
-					<input type="radio" name="boolean" value="true" checked> True<br>
-					<input type="radio" name="boolean" value="false" checked> False<br>
-				</form>	
-			</div>
-			
-			<div class="question-block">			
-				<div class="question-heading"><h1>Question #3</h1></div>
-				<div class="question-content">
-					<p>Complete the CSS rule below to ensure images will scale to the size of the parent (2 marks)</p>
-				</div>		
-				<form>                                                                
-					<input type="text" id="answer" placeholder="Answer...">
-				</form>
-			</div>
+          <div class="question-block">			
+            <div class="question-heading"><h1>Question #2</h1></div>
+            <div class="question-content">
+              <p>Media queries can be applied either in the link tag or defined in an external CSS file. (1 marks)</p>
+            </div>
+            <form>
+              <input type="radio" name="boolean" value="true" checked> True<br>
+              <input type="radio" name="boolean" value="false" checked> False<br>
+            </form>	
+          </div>
+          
+          <div class="question-block">			
+            <div class="question-heading"><h1>Question #3</h1></div>
+            <div class="question-content">
+              <p>Complete the CSS rule below to ensure images will scale to the size of the parent (2 marks)</p>
+            </div>		
+            <form>                                                                
+              <input type="text" id="answer" placeholder="Answer...">
+            </form>
+          </div>
 
-			<div class="question-block">			
-				<div class="question-heading"><h1>Question #4</h1></div>
-				<div class="question-content">
-					<p>Choose the media query breakpoint that will match when the browser viewport is thinnest (1 mark)</p>
-				</div>
-				<form>
-					<input type="radio" name="screen" value="bigscreen" checked> @media only screen and (min-width:1024px)<br>
-					<input type="radio" name="screen" value="smallscreen" checked> @media only screen and (min-width:300px) and (max-width: 800px)<br>
-					<input type="radio" name="screen" value="midscreen" checked> @media only screen and (min-width:800px) and (max-width: 1024px)<br>
-				</form>
-			</div>
+          <div class="question-block">			
+            <div class="question-heading"><h1>Question #4</h1></div>
+            <div class="question-content">
+              <p>Choose the media query breakpoint that will match when the browser viewport is thinnest (1 mark)</p>
+            </div>
+            <form>
+              <input type="radio" name="screen" value="bigscreen" checked> @media only screen and (min-width:1024px)<br>
+              <input type="radio" name="screen" value="smallscreen" checked> @media only screen and (min-width:300px) and (max-width: 800px)<br>
+              <input type="radio" name="screen" value="midscreen" checked> @media only screen and (min-width:800px) and (max-width: 1024px)<br>
+            </form>
+          </div>
 
-			<div class="question-block">			
-				<div class="question-heading"><h1>Question #5</h1></div>
-				<div class="question-content">
-					<p>Write the media query breakpoint for when a browser viewport is less than 400px tall (2 marks)</p>
-				</div>
-				<form>                                                                
-					<input type="text" id="answer" placeholder="Answer...">
-				</form>
-			</div>
-			
-			<div class="question-block">			
-				<div class="question-heading"><h1>Question #6</h1></div>
-				<div class="question-content">
-					<p>Name at least two design best practices when styling for small devices (2 marks)</p>
-				</div>
-				<form>                                                                
-					<input type="text" id="answer" placeholder="Answer...">
-				</form>
-			</div>
-			
-			<form action="action_page.php">
-				<input type="submit" value="Submit Quiz">
-			</form>
-          </div>  
+          <div class="question-block">			
+            <div class="question-heading"><h1>Question #5</h1></div>
+            <div class="question-content">
+              <p>Write the media query breakpoint for when a browser viewport is less than 400px tall (2 marks)</p>
+            </div>
+            <form>                                                                
+              <input type="text" id="answer" placeholder="Answer...">
+            </form>
+          </div>
+            
+          <div class="question-block">			
+            <div class="question-heading"><h1>Question #6</h1></div>
+            <div class="question-content">
+              <p>Name at least two design best practices when styling for small devices (2 marks)</p>
+            </div>
+            <form>                                                                
+              <input type="text" id="answer" placeholder="Answer...">
+            </form>
+          </div>
+          
+          <form action="action_page.php">
+            <input type="submit" value="Submit Quiz">
+          </form>
+        
         </div>  
-      </main>
+          
+      </main>  
+
+      <!-- do not put anything after the following div -->
+      <div class="push"></div>
+            
+    </div>  
+      
     </div>  
     
     <!--#include virtual="/students/droussy1/finalproject/protosite/ssis/footer.inc" -->
